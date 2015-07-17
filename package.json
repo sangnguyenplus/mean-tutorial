@@ -1,0 +1,33 @@
+{
+  "name": "MEAN-Tutorial",
+  "version": "0.0.1",
+  "author": "SangNguyen",
+  "main": "server.js",
+  "dependencies": {
+	  "bower": "*",
+    "express": "~4.5.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sangnguyenplus/mean-tutorial"
+  },
+  "subdomain": "mean-tutorial",
+  "scripts": {
+    "start": "grunt dev",
+    "test": "grunt test",
+    "postinstall": "bower install"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  }
+}
