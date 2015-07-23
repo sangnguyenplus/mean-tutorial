@@ -1,0 +1,10 @@
+<div class="post-detail">
+    <h1 class="post-title" ng-bind="post.title"></h1>
+    <div class="post-info">
+        <span class="create-time">
+        <i class="fa fa-calendar"></i> <span ng-bind="post.creationDate | fromNow"></span>
+        </span>
+    </div>
+    <div class="post-content text-justify" ng-bind="post.content | unsafe">
+    </div>
+</div>

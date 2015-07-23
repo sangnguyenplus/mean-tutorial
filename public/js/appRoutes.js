@@ -2,7 +2,6 @@ angular.module('appRoutes',[]).config(['$stateProvider', '$urlRouterProvider','$
  function($stateProvider, $urlRouterProvider,$locationProvider){
  /*Điều hướng 404*/
   $urlRouterProvider.otherwise("/404.html");
-  $urlRouterProvider.when('/_=_', '/');
   /*Thiết lập các state*/
   $stateProvider
     .state('home', {
@@ -13,12 +12,22 @@ angular.module('appRoutes',[]).config(['$stateProvider', '$urlRouterProvider','$
     .state('list', {
       url: "/list-post",
       templateUrl: "views/list.html",
-      controller: 'baseController'
+      controller: 'ListPostController'
     })
     .state('create', {
       url: "/create-post",
       templateUrl: "views/create.html",
-      controller: 'baseController'
+      controller: 'CreatePostController'
+    })
+    .state('detail', {
+      url: "/post/detail/:id",
+      templateUrl : 'views/detail.html',
+      controller :'DetailPostController'
+    })
+    .state('edit', {
+      url: "/post/edit/:id",
+      templateUrl : 'views/edit.html',
+      controller :'DetailPostController'
     })
 	/*===============404 NOT FOUND================*/
 	.state('404', {
