@@ -24,8 +24,7 @@
   },
   "subdomain": "mean-tutorial",
   "scripts": {
-    "start": "grunt dev",
-    "test": "grunt test",
+    "start": "grunt cssmin",
     "postinstall": "bower install"
   },
   "engines": {

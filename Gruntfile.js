@@ -42,12 +42,12 @@ module.exports = function(grunt) {
     });
 
     // // Plugin loading
-    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
 
     // Task definition
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('build', ['less']);
+    grunt.registerTask('build', ['cssmin']);
 
 };
